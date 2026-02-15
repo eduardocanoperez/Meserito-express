@@ -3,6 +3,7 @@
     --font-sans: 'Inter', sans-serif;
     /* === Colores ===*/
     --color-cream-bg: #FFF8E1;
+    --color-white: #ffffff;
     --color-gold-accent: #F4D03F;
     --color-gold-text: #D4AF37;
     --color-red-accent: #E57373;
@@ -17,4 +18,50 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-cream-bg);
   color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  line-height: inherit;
+  height: 100vh;
+
+}
+.header-section {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.user-icon {
+  cursor: pointer;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.table-selection {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.config-icon {
+  cursor: pointer;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
