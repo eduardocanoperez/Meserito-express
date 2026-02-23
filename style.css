@@ -14,6 +14,11 @@
     --shadow-card-gold: 0 6px 0 0 var(--color-gold-accent);
     --shadow-card-red: 0 6px 0 0 var(--color-red-accent);
 }
+* {
+  border-style: solid;
+  border-width: 0;
+  box-sizing:border-box;
+}
 body {
   font-family: var(--font-sans);
   background-color: var(--color-cream-bg);
@@ -82,9 +87,23 @@ body {
   text-align: center;
   align-items: flex-end;
   justify-content: space-between;
-  border-style: solid;
-  border-width: 0;
-  box-sizing:border-box;
   border-bottom-width: 1px;
   border-color: var(--color-text-gray);
+}
+.all-button {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-transform: none;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+  border-bottom-width: 5px;
+  border-color: var(--color-gold-text);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
 }
